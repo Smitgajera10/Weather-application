@@ -49,7 +49,7 @@ const getDateTime = (dt) => {
 }
 
 const getWeatherData = async () => {
-    const weatherURL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=8881759bbad77a0deaec1f320c0f7a99`
+    const weatherURL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=8881759bbad77a0deaec1f320c0f7a99&units=metric`
 
     try {
         const res = await fetch(weatherURL);
